@@ -1,0 +1,21 @@
+"What Happens When You Type 'https://www.google.com' in Your Browser"
+
+When you type "https://www.google.com" in your browser and press Enter, a series of events take place behind the scenes to bring the Google homepage to your screen. This process involves several components that work together to ensure a seamless and secure experience. Here's a step-by-step breakdown of what happens:
+
+DNS Request: The first step is a DNS (Domain Name System) request. Your browser sends a request to a DNS server to translate the URL "https://www.google.com" into the IP address of the Google server.
+
+TCP/IP: Once the browser has the IP address, it establishes a TCP/IP (Transmission Control Protocol/Internet Protocol) connection to the server. This protocol ensures that the data transmitted between the browser and the server is delivered accurately.
+
+Firewall: If the Google server is behind a firewall, the connection request must pass through it for security purposes. The firewall checks the request to ensure it meets the security policies set by the firewall administrator.
+
+HTTPS/SSL: Next, the browser initiates an HTTPS (Hypertext Transfer Protocol Secure) connection to the server. This secure protocol encrypts all data transmitted between the browser and the server, preventing eavesdropping and tampering. Additionally, the browser verifies the SSL (Secure Sockets Layer) certificate provided by the server to confirm that the connection is secure.
+
+Load-balancer: In the case of a high volume of traffic, Google uses a load-balancer to distribute incoming requests to multiple servers. The load-balancer routes the request to an available server that can handle it.
+
+Web server: The request is then handled by a web server, which is responsible for serving web pages to clients.
+
+Application server: If the web server determines that the request requires application logic, it sends the request to an application server. This server performs the necessary processing and returns the results to the web server.
+
+Database: If the request requires data to be retrieved from a database, the application server sends a request to the database. The database returns the requested data to the application server, which in turn returns the results to the web server.
+
+These events occur quickly, and the results are displayed in your browser, allowing you to access the Google homepage. By utilizing various components such as DNS, TCP/IP, firewall, HTTPS/SSL, load-balancer, web server, application server, and database, the process is made secure and efficient.
